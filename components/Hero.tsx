@@ -24,13 +24,7 @@ export default function Hero() {
 
       <div className="portrait-placeholder" aria-label="Portrait placeholder">
         <div className="portrait-inner">
-          <img src="/profile_pic.png" alt=""
-            style={{
-              width: '500px',
-              height: '500px',
-              borderRadius: '50%',
-              objectFit: 'cover'
-          }} /> 
+          <img className="portrait-img" src="/profile_pic.png" alt="" />
         </div>
       </div>
     </section>

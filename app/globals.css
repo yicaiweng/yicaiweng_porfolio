@@ -65,6 +65,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .button:hover { transform: translateY(-1px); }
 
 .portrait-placeholder {
+  width: 100%;
+  max-width: 560px;
+  min-width: 0;
+  justify-self: center;
   aspect-ratio: 1;
   border-radius: 50%;
   border: 1px dashed #475163;
@@ -72,7 +76,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   place-items: center;
   background: radial-gradient(circle at center, var(--surface-soft), transparent 68%);
 }
-.portrait-inner { text-align: center; display: grid; gap: 10px; color: var(--muted); padding: 30px; }
+.portrait-inner { width: 100%; box-sizing: border-box; text-align: center; display: grid; gap: 10px; color: var(--muted); padding: 30px; }
+.portrait-img { display: block; width: 100%; height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; }
 .portrait-inner span { color: var(--text); font-size: clamp(3rem, 8vw, 5rem); font-weight: 700; letter-spacing: -.06em; }
 
 .section { padding-block: 100px; border-top: 1px solid var(--border); }
